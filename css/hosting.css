@@ -1,6 +1,6 @@
 /* Showcase */
 .hosting::before {
-	background-image: url('/img/showcase/img4.jpg');
+	background-image: url('../img/showcase/img4.jpg');
 }
 .fadeIn-right {
 	left: 80%;
@@ -197,37 +197,37 @@
 }
 
 .sliders .slide:first-child {
-	background-image: url('/img/slider/img1.jpg');
+	background-image: url('../img/slider/img1.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .sliders .slide:nth-child(2) {
-	background-image: url('/img/slider/img2.jpg');
+	background-image: url('../img/slider/img2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .sliders .slide:nth-child(3) {
-	background-image: url('/img/slider/img3.jpg');
+	background-image: url('../img/slider/img3.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .sliders .slide:nth-child(4) {
-	background-image: url('/img/slider/img4.jpg');
+	background-image: url('../img/slider/img4.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .sliders .slide:nth-child(5) {
-	background-image: url('/img/slider/img5.jpg');
+	background-image: url('../img/slider/img5.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .sliders .slide:nth-child(6) {
-	background-image: url('/img/slider/img6.jpg');
+	background-image: url('../img/slider/img6.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
