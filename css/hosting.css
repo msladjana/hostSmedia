@@ -1,0 +1,313 @@
+/* Showcase */
+.hosting::before {
+	background-image: url('/img/showcase/img4.jpg');
+}
+.fadeIn-right {
+	left: 80%;
+}
+/* End Showcase */
+
+/* Pricing panel */
+.pricing-panel .grid {
+	grid-template-columns: repeat(3, 1fr);
+}
+.pricing-img {
+	margin-bottom: 45px;
+	max-width: 30%;
+	color: var(--secondary-color);
+}
+.pricing-panel h3 {
+	text-transform: uppercase;
+}
+.pricing-features {
+	margin: 50px 0 25px;
+	color: #4d4d4d;
+}
+.pricing-features-item {
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	padding: 15px 0;
+	border-top: 1px solid #aed8fd;
+}
+.pricing-features-item:first-child {
+	border-top: none;
+}
+.pricing-features-item:last-child {
+	border-bottom: 1px solid #aed8fd;
+}
+.pricing-price {
+	color: var(--primary-color);
+	display: block;
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.pricing-price span {
+	font-size: 1.5rem;
+}
+/*End Pricing panel */
+
+/* Hosting-block */
+.hosting-block .container {
+	max-width: 1400px;
+}
+.hosting-block .grid {
+	grid-template-columns: 1fr 1fr;
+}
+.hosting-block .card img {
+	border-radius: 15px;
+}
+.hosting-block .alert {
+	background-color: var(--light-color);
+	padding: 10px 20px;
+	margin: 15px 0;
+}
+.hosting-block .alert i {
+	margin-right: 10px;
+}
+.hosting-block .alert-success {
+	background-color: var(--success-color);
+	color: #fff;
+}
+.hosting-block .top {
+	padding-left: 1.5rem;
+}
+.hosting-block p {
+	padding-bottom: 1.5rem;
+}
+.hosting-block ul li {
+	list-style-type: square;
+}
+.hosting-block li::marker {
+	color: var(--primary-color);
+}
+.hosting-block ul {
+	padding-left: 0;
+	padding-bottom: 1.5rem;
+}
+.hosting-block .list li {
+	list-style: none;
+	padding: 3px;
+}
+.hosting-block .list li a {
+	color: var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
+}
+.hosting-block .list li a:hover {
+	color: var(--secondary-color);
+}
+/*End Hosting-block */
+
+/*  Features  */
+.features .grid p {
+	font-size: 1.3rem;
+}
+.features .grid p i {
+	padding-right: 1.1rem;
+}
+/* End Features  */
+
+/* Features-two */
+.features-two .container .card {
+	max-width: 100%;
+	height: auto;
+}
+.features-two .container .card i {
+	color: var(--secondary-color);
+}
+/*End Features-two */
+
+/* Slider */
+.sliders .slider {
+	width: 100vw;
+	height: 60vh;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	color: var(--light-color);
+}
+.sliders .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+.sliders .slide.current {
+	opacity: 1;
+}
+.sliders .slide .content-header {
+	margin: 70px auto;
+	font-size: 25px;
+	font-weight: 700;
+	max-width: 400px;
+	width: 100%;
+}
+.sliders .slide .content {
+	position: absolute;
+	bottom: 30px;
+	left: -700px;
+	opacity: 0;
+	width: 700px;
+	background-color: var(--primary-color);
+	color: var(--light-color);
+	padding: 35px;
+}
+.slider .slide.current .content {
+	opacity: 1;
+	-webkit-transform: translateX(700px);
+	-moz-transform: translateX(700px);
+	transform: translateX(700px);
+	-webkit-transition: all 0.7s ease-in-out 0.3s;
+	-moz-transition: all 0.7s ease-in-out 0.3s;
+	transition: all 0.7s ease-in-out 0.3s;
+}
+.buttons button#next {
+	position: absolute;
+	top: 18%;
+	right: 25px;
+}
+.buttons button#prev {
+	position: absolute;
+	top: 18%;
+	left: 25px;
+}
+.buttons button {
+	border: 2px solid var(--light-color);
+	background-color: transparent;
+	color: var(--light-color);
+	cursor: pointer;
+	padding: 13px 15px;
+	border-radius: 50%;
+	outline: none;
+}
+.buttons button:hover {
+	background-color: var(--light-color);
+	color: var(--dark-color);
+}
+.sliders .slide {
+	-webkit-filter: grayscale(10%);
+	filter: grayscale(10%);
+}
+
+.sliders .slide:first-child {
+	background-image: url('/img/slider/img1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sliders .slide:nth-child(2) {
+	background-image: url('/img/slider/img2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sliders .slide:nth-child(3) {
+	background-image: url('/img/slider/img3.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sliders .slide:nth-child(4) {
+	background-image: url('/img/slider/img4.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sliders .slide:nth-child(5) {
+	background-image: url('/img/slider/img5.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sliders .slide:nth-child(6) {
+	background-image: url('/img/slider/img6.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*End Slider */
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+	.hosting-block .container {
+		max-width: 1100px;
+	}
+	.hosting-block .grid {
+		grid-template-columns: 1fr;
+	}
+	.features {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 992px) {
+	.pricing-panel .grid,
+	.features-two .grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+	.features .grid {
+		grid-template-columns: none;
+	}
+	.pricing-panel .card-shadow {
+		width: 60%;
+		margin: auto;
+	}
+}
+
+@media (max-width: 576px) {
+	.pricing-panel .card-shadow {
+		width: 90%;
+	}
+	.hosting-block .card,
+	.features-two .card {
+		margin: 0;
+		padding: 0;
+	}
+	.hosting-block p,
+	li {
+		font-size: 1.2rem;
+	}
+	.features h2,
+	.sliders h1 {
+		font-size: 1.7rem;
+	}
+	.sliders .slider {
+		height: 70vh;
+	}
+	.slider .slide .content {
+		bottom: -300px;
+		left: 0;
+		width: 100%;
+	}
+	.slider .slide.current .content {
+		-webkit-transform: translateY(-300px);
+		-moz-transform: translateY(-300px);
+		transform: translateY(-300px);
+	}
+	.sliders .slide .content-header {
+		margin: 140px auto;
+		font-size: 20px;
+		max-width: 300px;
+		width: 100%;
+	}
+	.buttons button#next {
+		position: absolute;
+		top: 6%;
+		right: 25px;
+	}
+	.buttons button#prev {
+		position: absolute;
+		top: 6%;
+		left: 25px;
+	}
+}
+
+/*END MEDIA QUERIES */
