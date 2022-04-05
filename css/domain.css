@@ -241,6 +241,7 @@
 	}
 	.intersec .grid {
 		grid-template-rows: none;
+		align-content: space-evenly;
 	}
 	.blocks .container {
 		width: 90%;
