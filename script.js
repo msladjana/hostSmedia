@@ -1,18 +1,25 @@
 //  Stats index.html
 const counters = document.querySelectorAll('.counter');
+// speed represents the number with which the data target will be divided
+// the smaller the number the faster the counter
 const speed = 200;
 
 counters.forEach((counter) => {
 	const updateCount = () => {
+		// get all data-target attribut and convert from string to number using unary operator (+)
 		const target = +counter.getAttribute('data-target');
+		// get text content (0) of a node and convert from string to number using unary operator (+)
 		const count = +counter.innerText;
 
 		const inc = target / speed;
 
 		if (count < target) {
+			// if has not reached the target
 			counter.innerText = Math.ceil(count + inc);
+			// The setTimeout() method calls a function after a number of milliseconds.
 			setTimeout(updateCount, 45);
 		} else {
+			// if reaches the target
 			count.innerText = target;
 		}
 	};
@@ -23,15 +30,12 @@ counters.forEach((counter) => {
 // Acordions - domain.html
 document.querySelectorAll('.btn-inline').forEach((button) => {
 	button.addEventListener('click', () => {
-		const accordionContent = button.nextElementSibling;
 
+		// toggle(between two modes) active state on the button
+		// if it does not exist add active state
+		// if it exist remove active state
 		button.classList.toggle('active');
 
-		if (button.classList.contains('active')) {
-			accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-		} else {
-			accordionContent.style.maxHeight = 0;
-		}
 	});
 });
 // End Accordions - domain.html
@@ -74,9 +78,11 @@ const prevSlide = () => {
 };
 
 // Button events
+// call nextSlide() function when the click event occurs
 next.addEventListener('click', (e) => {
 	nextSlide();
 });
+// call prevSlide() function when the click event occurs
 prev.addEventListener('click', (e) => {
 	prevSlide();
 });

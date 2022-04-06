@@ -162,6 +162,9 @@
 	transform: scale(1.9);
 	color: var(--primary-color);
 }
+.btn-inline.active + .accordion-content{
+	display: block;
+}
 .btn-inline.active {
 	border-bottom: 1px solid var(--primary-color);
 }
@@ -170,12 +173,9 @@
 	color: var(--secondary-color);
 }
 .accordion-content {
-	overflow: hidden;
-	max-height: 0;
 	padding: 0px 15px;
-	-webkit-transition: max-height 0.7s;
-	-moz-transition: max-height 0.7s;
-	transition: max-height 0.7s;
+	display: none;
+	overflow: auto;
 }
 .accordion-content p {
 	padding-right: 10rem;
